@@ -1,0 +1,20 @@
+DESCRIPTION="ARJ archive extractor"
+HOMEPAGE="http://www.arjsoftware.com/"
+SRC_URI="ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/ache/${P}.tgz"
+PATCH_URI="
+	mirror://portage/app-arch/${PN}/files/${P}-CAN-2004-0947.patch
+	mirror://portage/app-arch/${PN}/files/${P}-sanitation.patch
+	mirror://portage/app-arch/${PN}/files/${P}-gentoo-fbsd.patch
+"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	dobin unarj.exe
+	dodoc *.txt
+}

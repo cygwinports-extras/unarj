@@ -1,0 +1,54 @@
+unarj
+------------------------------------------
+A simple ARJ archive extraction program.
+
+IMPORTANT:
+Licensing terms do NOT allow binary package distribution on Cygwin.
+
+Runtime requirements:
+  cygwin-1.5.25-11
+
+Build requirements:
+(besides corresponding -devel packages)
+  binutils-20060817-1
+  cygport-0.3.9-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+
+Canonical website:
+  http://www.arjsoftware.com/
+
+Canonical download:
+  ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/ache/
+
+-------------------------------------------
+
+Build instructions:
+  unpack unarj-2.65-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./unarj-2.65-X.cygport all
+
+This will create:
+  /usr/src/unarj-2.65-X-src.tar.bz2
+  /usr/src/unarj-2.65-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/unarj.exe
+  /usr/share/doc/unarj-2.65/technote.txt
+  /usr/share/doc/unarj-2.65/unarj.txt
+
+------------------
+
+Port Notes:
+
+----- version 2.65-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

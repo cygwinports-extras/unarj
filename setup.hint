@@ -1,0 +1,4 @@
+category: Archive
+requires: cygwin
+sdesc: "ARJ archive extractor"
+ldesc: "A simple ARJ archive extraction program."
